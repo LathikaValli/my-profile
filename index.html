@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>M LATHIKA VALLI - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fceaff;
+      color: #333;
+      text-align: center;
+    }
+
+    img {
+      margin-top: 30px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ffcce7;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 28px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #aa336a;
+    }
+
+    p, ul {
+      max-width: 700px;
+      margin: 10px auto;
+      font-size: 16px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #ffd9ec;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .content {
+      display: none;
+      margin-top: 20px;
+      background-color: #fff0fa;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .active {
+      display: block;
+    }
+
+    a {
+      color: #aa3399;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="photo.jpg.jpg" alt="Lathika's Photo">
+  <h1>M LATHIKA VALLI</h1>
+  <p>CSE Student at LICET</p>
+
+  <h2>About Me</h2>
+  <p>
+    Hi, I’m Lathika Valli, a passionate Computer Science student at LICET. From a young age, I’ve been captivated by the endless possibilities that technology offers. My curiosity has driven me to explore different areas of tech, from programming languages like C and Python to the exciting world of Frontend Development. I thrive on solving complex problems and constantly learning new things. The beauty of coding lies in its ability to turn ideas into reality, and that’s what fuels my motivation. I'm excited about how technology can improve lives, and I aim to contribute to innovative projects that make a real-world impact.
+  </p>
+
+  <div class="buttons">
+    <button onclick="showContent('skills')">Skills</button>
+    <button onclick="showContent('projects')">Projects</button>
+    <button onclick="showContent('hobbies')">Hobbies</button>
+    <button onclick="showContent('contact')">Contact</button>
+  </div>
+
+  <div id="skills" class="content">
+    <h2>Skills</h2>
+    <ul>
+      <li>C</li>
+      <li>Python</li>
+      <li>MySQL</li>
+      <li>Figma</li>
+      <li>Frontend Development</li>
+      <li>Soft Skills</li>
+    </ul>
+  </div>
+
+  <div id="projects" class="content">
+    <h2>Projects</h2>
+    <ul>
+      <li>Navear App – Navigation app for disabled people</li>
+      <li>Ozone – Skincare website project</li>
+      <li>This Portfolio – Personal static portfolio site</li>
+    </ul>
+  </div>
+
+  <div id="hobbies" class="content">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Badminton player</li>
+      <li>Drawing</li>
+      <li>Watching series and movies</li>
+      <li>Dancing</li>
+    </ul>
+  </div>
+
+  <div id="contact" class="content">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:lathikavalli.28csb@licet.ac.in">lathikavalli.28csb@licet.ac.in</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/m-lathika-valli-303419318/" target="_blank">Visit my profile</a></p>
+  </div>
+
+  <script>
+    function showContent(id) {
+      document.querySelectorAll('.content').forEach(div => {
+        div.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
